@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" style="width: 400px;">
+        <h3 style="text-align: center">注册账号</h3>
+        <form  method="post" action="loginServlet?op=loginDo" >
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" class="form-control" id="name" name="username"  placeholder="请输入姓名" />
+          </div>
+          <div class="form-group">
+            <label for="name">账号</label>
+            <input type="text" class="form-control" id="name" name="userAccount"  placeholder="请输入账号" />
+          </div>
+
+          <div class="form-group">
+            <label for="age">密码</label>
+            <input type="text" class="form-control" id="age"  name="password1" placeholder="请输入密码" />
+          </div>
+ <div class="form-group">
+            <label for="email">确认密码</label>
+            <input type="text" id="email" class="form-control" name="password2" placeholder="请再次输入密码"/>
+          </div>
+
+             <div class="form-group" style="text-align: center">
+                <button class="btn btn-primary" type="submit">注册</button>
+                
+             </div>
+        </form>
+        </div>
+</body>
+</html>

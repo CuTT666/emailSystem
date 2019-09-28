@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<meta charset="UTF-8">
+<script type="text/javascript">
+</script>
+<title>发件箱</title>
+</head>
+<body>
+<div class="container" style="width: 400px;">
+        <h3 style="text-align: center">发邮件</h3>
+        <form  method="post" action="emailServlet?op=sendEmail">
+        <input type="hidden" value="${ACCOUNT }" name="account">
+          <div class="form-group">
+            <label for="name">收件人地址</label>
+            <input type="text" class="form-control" id="name" name="receive_user_id"  placeholder="请输入姓名" />
+          </div>
+
+          <div class="form-group">
+            <label for="age">邮件标题</label>
+            <input type="text" class="form-control" id="age"  name="title" placeholder="请输入邮件标题" />
+          </div>
+		<div class="form-group">
+            <label for="address">邮件类型</label>
+             <select name="address" id="address" class="form-control" >
+                <option value="陕西">通知</option>
+                <option value="北京">表白</option>
+                <option value="上海">问候</option>
+            </select>
+          </div>
+ <div class="form-group">
+            <label for="email">邮件内容</label>
+            <input type="text" id="email" class="form-control" name="content" placeholder="请输入邮件内容"/>
+          </div>
+
+             <div class="form-group" style="text-align: center">
+                <button class="btn btn-primary" type="submit">发送</button>
+                
+             </div>
+        </form>
+        </div>
+</body>
+</html>

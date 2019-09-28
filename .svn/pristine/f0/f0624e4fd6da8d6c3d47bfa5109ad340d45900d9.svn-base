@@ -1,0 +1,4 @@
+driverClass=com.mysql.cj.jdbc.Driver
+url=jdbc:mysql://localhost:3366/team1?useSSL=false&serverTimezone=UTC
+username=root
+password=123
